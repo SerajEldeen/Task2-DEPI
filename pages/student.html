@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="/style/student.css" />
+    <link rel="icon" href="/logo.jpg" />
+  </head>
+  <body>
+    <main id="student">
+      <div class="container">
+        <h1>Student Registration Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="roll">Roll no:</label>
+            <input type="text" id="roll" name="roll" required />
+          </div>
+
+          <div class="form-group name-group">
+            <label>Student name:</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <div class="form-group dob-group">
+            <label>Date of birth:</label>
+            <input
+              type="number"
+              name="day"
+              id="day"
+              placeholder="Day"
+              min="1"
+              max="31"
+              required
+            />
+            <input
+              type="number"
+              name="month"
+              id="month"
+              placeholder="Month"
+              min="1"
+              max="12"
+              required
+            />
+            <input
+              type="number"
+              name="year"
+              id="year"
+              placeholder="Year"
+              min="1900"
+              max="2100"
+              required
+            />
+          </div>
+
+          <div class="form-group mobile-group">
+            <label for="countrycode">Mobile no:</label>
+            <input
+              type="tel"
+              name="countrycode"
+              id="countrycode"
+              value="+20"
+              size="1"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <fieldset>
+            <legend>Gender:</legend>
+            <label for="male"
+              ><input
+                type="radio"
+                value="male"
+                id="male"
+                name="gender"
+                required
+              />
+              Male</label
+            >
+            <label for="female"
+              ><input type="radio" value="female" id="female" name="gender" />
+              Female</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Department:</legend>
+            <label for="cse"
+              ><input type="checkbox" value="CSE" id="cse" name="department" />
+              CSE</label
+            >
+            <label for="it"
+              ><input type="checkbox" value="IT" id="it" name="department" />
+              IT</label
+            >
+            <label for="ece"
+              ><input type="checkbox" value="ECE" id="ece" name="department" />
+              ECE</label
+            >
+            <label for="civil"
+              ><input
+                type="checkbox"
+                value="Civil"
+                id="civil"
+                name="department"
+              />
+              Civil</label
+            >
+            <label for="mech"
+              ><input
+                type="checkbox"
+                value="Mech"
+                id="mech"
+                name="department"
+              />
+              Mech</label
+            >
+          </fieldset>
+
+          <div class="form-group">
+            <label for="course">Course:</label>
+            <select name="course" id="course" required>
+              <option value="" disabled selected>
+                -----Select Current Course-----
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="file">Student photo:</label>
+            <input
+              type="file"
+              id="file"
+              name="photo"
+              accept="image/*"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="4"
+              placeholder="Enter your address"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

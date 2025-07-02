@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.parent > .child:nth-child(1) {
+  background-color: #ffd6a8;
+}
+.parent > .child:nth-child(2) {
+  background-color: #ffa2a2;
+}
+
+.child span {
+  font-size: 1.5rem;
+  transition: font-size 0.3s ease;
+}
+
+.child:hover {
+  transform: scale(1.2);
+}
+
+.child:hover a {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .parent {
+    flex-direction: column;
+  }
+}
